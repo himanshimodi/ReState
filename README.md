@@ -29,41 +29,38 @@ Make sure you have the following installed on your machine:
 ```sh
 git clone https://github.com/himanshimodi/ReState.git
 cd react_native-restate
+```
 
-# App Setup for Expo and Appwrite Integration
+Installation
+Run the following command to install dependencies:
+```sh
+npm install
+```
 
-## Installation
+Set Up Environment Variables
+Create a new file named .env.local in the root of your project and add the following content:
 
-1. Clone the repository or download the project files.
-2. Install the necessary dependencies using npm:
-    ```bash
-    npm install
-    ```
+```sh
+EXPO_PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
+EXPO_PUBLIC_APPWRITE_PROJECT_ID=
+EXPO_PUBLIC_APPWRITE_DATABASE_ID=
+EXPO_PUBLIC_APPWRITE_GALLERIES_COLLECTION_ID=
+EXPO_PUBLIC_APPWRITE_REVIEWS_COLLECTION_ID=
+EXPO_PUBLIC_APPWRITE_AGENTS_COLLECTION_ID=
+EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION_ID=
+```
 
-## Set Up Environment Variables
+Replace the values with your actual Appwrite credentials. You can obtain these credentials by signing up & creating a new project on the Appwrite website.
 
-1. Create a new file named `.env.local` in the root of your project.
-2. Add the following content to the `.env.local` file:
-    ```bash
-    EXPO_PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
-    EXPO_PUBLIC_APPWRITE_PROJECT_ID=
-    EXPO_PUBLIC_APPWRITE_DATABASE_ID=
-    EXPO_PUBLIC_APPWRITE_GALLERIES_COLLECTION_ID=
-    EXPO_PUBLIC_APPWRITE_REVIEWS_COLLECTION_ID=
-    EXPO_PUBLIC_APPWRITE_AGENTS_COLLECTION_ID=
-    EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION_ID=
-    ```
-3. Replace the placeholder values with your actual Appwrite credentials. To get these credentials, sign up and create a new project on the [Appwrite website](https://appwrite.io/).
-
-## Start the App
-
-To start the application, run the following command:
-```bash
+###Start the App
+Run the following command to start the app:
+```sh
 npx expo start
+```
 
-After running the above command, you will have several options to open the app:
+In the output, you'll find options to open the app in a:
 
-Development build
-Android emulator
-iOS simulator
-Expo Go, a limited sandbox for trying out app development with Expo
+1] Development build
+2] Android emulator
+3] iOS simulator
+4] Expo Go, a limited sandbox for trying out app development with Expo
