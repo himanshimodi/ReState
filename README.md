@@ -1,50 +1,69 @@
-# Welcome to your Expo app 👋
+Real Estate App using Expo, TypeScript, Appwrite, and Tailwind CSS
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Introduction
 
-## Get started
+Build a full-stack Real Estate application with React Native, featuring Google authentication, dynamic property listings, and user profiles. Designed with modern tools like Expo SDK 52, Appwrite, Tailwind CSS, and TypeScript for a seamless and scalable experience.
 
-1. Install dependencies
+If you're getting started and need assistance or face any bugs, join our active Discord community with over 50k+ members. It's a place where people help each other out.
 
-   ```bash
-   npm install
-   ```
+Features
 
-2. Start the app
+Authentication with Google: Secure and seamless user sign-ins using Google’s authentication service.
 
-   ```bash
-    npx expo start
-   ```
+Home Page: Displays the latest and recommended properties with powerful search and filter functionality.
 
-In the output, you'll find options to open the app in a
+Explore Page: Allows users to browse all types of properties with a clean and intuitive interface.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Property Details Page: Provides comprehensive information about individual properties, including images and key details.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Profile Page: Customizable user settings and profile management.
 
-## Get a fresh project
+Centralized Data Fetching: Custom-built solution inspired by TanStack’s useQuery for efficient API calls.
 
-When you're ready, run:
+And many more, including code architecture and reusability.
 
-```bash
-npm run reset-project
-```
+🤸 Quick Start
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Follow these steps to set up the project locally on your machine.
 
-## Learn more
+Prerequisites
 
-To learn more about developing your project with Expo, look at the following resources:
+Make sure you have the following installed on your machine:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Git
 
-## Join the community
+Node.js
 
-Join our community of developers creating universal apps.
+npm (Node Package Manager)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Cloning the Repository
+git clone https://github.com/himanshimodi/ReState.git
+
+Installation
+npm install
+
+Set Up Environment Variables
+
+Create a new file named .env.local in the root of your project and add the following content:
+EXPO_PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
+EXPO_PUBLIC_APPWRITE_PROJECT_ID=
+EXPO_PUBLIC_APPWRITE_DATABASE_ID=
+EXPO_PUBLIC_APPWRITE_GALLERIES_COLLECTION_ID=
+EXPO_PUBLIC_APPWRITE_REVIEWS_COLLECTION_ID=
+EXPO_PUBLIC_APPWRITE_AGENTS_COLLECTION_ID=
+EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION_ID=
+
+Replace the values with your actual Appwrite credentials. You can obtain these credentials by signing up & creating a new project on the Appwrite website.
+
+Start the App
+npx expo start
+
+In the output, you'll find options to open the app in a:
+
+1]Development build
+
+2]Android emulator
+
+3]iOS simulator
+
+4]Expo Go, a limited sandbox for trying out app development with Expo
