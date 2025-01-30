@@ -37,14 +37,18 @@ Node.js
 npm (Node Package Manager)
 
 Cloning the Repository
+
 git clone https://github.com/himanshimodi/ReState.git
+cd ReState
 
 Installation
+
 npm install
 
 Set Up Environment Variables
 
 Create a new file named .env.local in the root of your project and add the following content:
+
 EXPO_PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
 EXPO_PUBLIC_APPWRITE_PROJECT_ID=
 EXPO_PUBLIC_APPWRITE_DATABASE_ID=
@@ -56,14 +60,15 @@ EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION_ID=
 Replace the values with your actual Appwrite credentials. You can obtain these credentials by signing up & creating a new project on the Appwrite website.
 
 Start the App
+
 npx expo start
 
 In the output, you'll find options to open the app in a:
 
-1]Development build
+Development build
 
-2]Android emulator
+Android emulator
 
-3]iOS simulator
+iOS simulator
 
-4]Expo Go, a limited sandbox for trying out app development with Expo
+Expo Go, a limited sandbox for trying out app development with Expo
