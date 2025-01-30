@@ -50,9 +50,10 @@ EXPO_PUBLIC_APPWRITE_AGENTS_COLLECTION_ID=
 EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION_ID=
 ```
 
-Replace the values with your actual Appwrite credentials. You can obtain these credentials by signing up & creating a new project on the Appwrite website.
+Replace the values with your actual Appwrite credentials. 
+You can obtain these credentials by signing up & creating a new project on the Appwrite website.
 
-###Start the App
+### Start the App
 Run the following command to start the app:
 ```sh
 npx expo start
@@ -63,4 +64,4 @@ In the output, you'll find options to open the app in a:
 1] Development build
 2] Android emulator
 3] iOS simulator
-4] Expo Go, a limited sandbox for trying out app development with Expo
+4] Expo Go, a limited sandbox for trying out app development with Expo.
