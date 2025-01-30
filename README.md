@@ -29,3 +29,41 @@ Make sure you have the following installed on your machine:
 ```sh
 git clone https://github.com/himanshimodi/ReState.git
 cd react_native-restate
+
+# App Setup for Expo and Appwrite Integration
+
+## Installation
+
+1. Clone the repository or download the project files.
+2. Install the necessary dependencies using npm:
+    ```bash
+    npm install
+    ```
+
+## Set Up Environment Variables
+
+1. Create a new file named `.env.local` in the root of your project.
+2. Add the following content to the `.env.local` file:
+    ```bash
+    EXPO_PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
+    EXPO_PUBLIC_APPWRITE_PROJECT_ID=
+    EXPO_PUBLIC_APPWRITE_DATABASE_ID=
+    EXPO_PUBLIC_APPWRITE_GALLERIES_COLLECTION_ID=
+    EXPO_PUBLIC_APPWRITE_REVIEWS_COLLECTION_ID=
+    EXPO_PUBLIC_APPWRITE_AGENTS_COLLECTION_ID=
+    EXPO_PUBLIC_APPWRITE_PROPERTIES_COLLECTION_ID=
+    ```
+3. Replace the placeholder values with your actual Appwrite credentials. To get these credentials, sign up and create a new project on the [Appwrite website](https://appwrite.io/).
+
+## Start the App
+
+To start the application, run the following command:
+```bash
+npx expo start
+
+After running the above command, you will have several options to open the app:
+
+Development build
+Android emulator
+iOS simulator
+Expo Go, a limited sandbox for trying out app development with Expo
